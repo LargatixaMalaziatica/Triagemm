@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Triagem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha de Triagem</h1>
+        <form id="triage-form">
+            <div class="form-group">
+                <label for="name">Nome do Paciente:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <p>Selecione seus sintomas:</p>
+                <label><input type="checkbox" name="symptom" value="febre"> Febre</label><br>
+                <label><input type="checkbox" name="symptom" value="dor_cabeca"> Dor de Cabeça</label><br>
+                <label><input type="checkbox" name="symptom" value="falta_ar"> Falta de Ar</label><br>
+                <label><input type="checkbox" name="symptom" value="dor_peito"> Dor no Peito</label><br>
+                <label><input type="checkbox" name="symptom" value="tontura"> Tontura</label><br>
+                <label><input type="checkbox" name="symptom" value="nausea"> Náusea</label><br>
+                <label><input type="checkbox" name="symptom" value="vomito"> Vômito</label><br>
+                <label><input type="checkbox" name="symptom" value="diarreia"> Diarreia</label><br>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="triage-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
